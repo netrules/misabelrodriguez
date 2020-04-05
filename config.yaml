@@ -1,8 +1,9 @@
-title: Phantom
-baseURL: /
+---
+title: Misabel Rodríguez
+baseURL: "/"
 params:
   none: ''
 disableKinds:
-  - RSS
-  - taxonomy
-  - taxonomyTerm
+- RSS
+- taxonomy
+- taxonomyTerm
