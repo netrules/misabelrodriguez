@@ -1,5 +1,9 @@
-copyright: '&copy; Phantom. All rights reserved.'
+---
+copyright: "&copy; All rights reserved. Made with love using Phantom, by "
 links:
-  - text: Made with Stackbit
-    url: 'https://www.stackbit.com'
-    new_window: true
+- text: Santiago González
+  url: http://sgonzalez.tech/
+  new_window: true
+- text: Made with Stackbit
+  url: https://www.stackbit.com
+  new_window: true
