@@ -1,13 +1,12 @@
 ---
 label: Contact Configuration
 hide_body: true
-is_partial: false
 fields:
-  - type: boolean
-    name: enabled
-    label: Enabled
-    description: Displays the section in the site footer
-    default: false
-  - type: text
-    name: title
-    label: Section Title
+- type: boolean
+  name: enabled
+  label: Enabled
+  description: Displays the section in the site footer
+  default: false
+- type: text
+  name: title
+  label: Section Title

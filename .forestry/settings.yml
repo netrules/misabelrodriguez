@@ -2,61 +2,70 @@
 new_page_extension: md
 auto_deploy: false
 admin_path: static/admin
-webhook_url: 'https://api.stackbit.com/project/5e8a5a630346490012575b99/webhook/forestry'
+webhook_url: https://api.stackbit.com/project/5e8a5a630346490012575b99/webhook/forestry
 sections:
-  - type: document
-    label: Config
-    path: config.yaml
-    templates:
-      - config
-  - type: document
-    label: Header Configuration
-    path: data/header.yml
-    templates:
-      - header
-  - type: document
-    label: Contact Configuration
-    path: data/contact.yml
-    templates:
-      - contact
-  - type: document
-    label: Social Configuration
-    path: data/social.yml
-    templates:
-      - social
-  - type: document
-    label: Footer Configuration
-    path: data/footer.yml
-    templates:
-      - footer
-  - type: document
-    label: Home
-    path: content/_index.md
-    templates:
-      - home
-  - type: directory
-    path: content
-    match: '**/*'
-    exclude: '{posts/**,_index.md,elements.md}'
-    label: Page
-    create: all
-    templates:
-      - page
-  - type: directory
-    path: content/posts
-    match: '**/*'
-    label: Post
-    create: all
-    templates:
-      - post
-  - type: document
-    label: Elements
-    path: content/elements.md
-    templates:
-      - elements
+- type: document
+  path: config.yaml
+  label: Config
+  templates:
+  - config
+- type: document
+  path: data/header.yml
+  label: Header Configuration
+  templates:
+  - header
+- type: document
+  path: data/contact.yml
+  label: Contact Configuration
+  templates:
+  - contact
+- type: document
+  path: data/social.yml
+  label: Social Configuration
+  templates:
+  - social
+- type: document
+  path: data/footer.yml
+  label: Footer Configuration
+  templates:
+  - footer
+- type: document
+  path: content/_index.md
+  label: Home
+  templates:
+  - home
+- type: directory
+  path: content
+  label: Page
+  create: all
+  match: "**/*"
+  exclude: "{posts/**,_index.md,elements.md}"
+  templates:
+  - page
+- type: directory
+  path: content/posts
+  label: Post
+  create: all
+  match: "**/*"
+  templates:
+  - post
+- type: document
+  path: content/elements.md
+  label: Elements
+  templates:
+  - elements
 upload_dir: static/images
-public_path: /images
+public_path: "/images"
 front_matter_path: ''
 use_front_matter_path: false
-file_template: ':filename:'
+file_template: ":filename:"
+build:
+  preview_env:
+  - HUGO_ENV=staging
+  - HUGO_VERSION=0.47
+  preview_output_directory: public
+  preview_docker_image: forestryio/hugo:latest
+  mount_path: "/srv"
+  instant_preview_command: hugo server -D -E -F --port 8080 --bind 0.0.0.0 --renderToDisk
+    -d public
 version: '0.47'

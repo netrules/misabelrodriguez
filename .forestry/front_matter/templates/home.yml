@@ -1,22 +1,22 @@
 ---
 label: Home
-is_partial: false
+hide_body: false
 fields:
-  - type: text
-    name: title
-    label: Page Title
-    config:
-      required: true
-  - type: textarea
-    name: header
-    label: Page Header
-    description: The bold text displayed at the top of the page
-  - type: text
-    name: layout
-    label: Layout
-    hidden: true
-    default: home
-    config:
-      required: true
+- type: text
+  name: title
+  label: Page Title
+  config:
+    required: true
+- type: textarea
+  name: header
+  label: Page Header
+  description: The bold text displayed at the top of the page
+- type: text
+  name: layout
+  label: Layout
+  hidden: true
+  default: home
+  config:
+    required: true
 pages:
-  - _index.md
+- content/_index.md
