@@ -1,0 +1,26 @@
+---
+label: Footer Configuration
+hide_body: true
+is_partial: false
+fields:
+  - type: text
+    name: copyright
+    label: Footer Copyright
+    description: The copyright text displayed at the bottom of the site.
+  - type: field_group_list
+    name: links
+    label: Links
+    description: A list of links displayed in the footer.
+    fields:
+      - type: text
+        name: text
+        label: Link text
+      - type: text
+        name: url
+        label: URL
+      - type: boolean
+        name: new_window
+        label: Open in new window
+        default: true
+    config:
+      labelField: text

@@ -1,0 +1,9 @@
+---
+label: Header Configuration
+hide_body: true
+is_partial: false
+fields:
+  - type: file
+    name: logo_img_src
+    label: Header Logo
+    description: The logo displayed On the upper left side of the page header

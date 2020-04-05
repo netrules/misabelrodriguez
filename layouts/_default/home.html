@@ -1,0 +1,23 @@
+{{ define "content" }}
+
+    <header>
+        <h1>{{ replace .Params.header "\n" "<br />" | safeHTML }}</h1>
+        {{ .Content }}
+    </header>
+    <section class="tiles">
+        {{ range $post := ((.Site.GetPage "section" "/posts").Pages).ByDate.Reverse }}
+            <article class="{{ $post.Params.home_style }}">
+                <span class="image">
+                    <img src="{{ $post.Params.home_img | relURL }}" alt="" />
+                </span>
+                <a href="{{ $post.URL }}">
+                    <h2>{{ $post.Title }}</h2>
+                    <div class="content">
+                        {{ partial "markdownify-block" $post.Params.excerpt }}
+                    </div>
+                </a>
+            </article>
+        {{ end }}
+    </section>
+
+{{ end }}

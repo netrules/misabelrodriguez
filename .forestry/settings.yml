@@ -1,0 +1,62 @@
+---
+new_page_extension: md
+auto_deploy: false
+admin_path: static/admin
+webhook_url: 'https://api.stackbit.com/project/5e8a5a630346490012575b99/webhook/forestry'
+sections:
+  - type: document
+    label: Config
+    path: config.yaml
+    templates:
+      - config
+  - type: document
+    label: Header Configuration
+    path: data/header.yml
+    templates:
+      - header
+  - type: document
+    label: Contact Configuration
+    path: data/contact.yml
+    templates:
+      - contact
+  - type: document
+    label: Social Configuration
+    path: data/social.yml
+    templates:
+      - social
+  - type: document
+    label: Footer Configuration
+    path: data/footer.yml
+    templates:
+      - footer
+  - type: document
+    label: Home
+    path: content/_index.md
+    templates:
+      - home
+  - type: directory
+    path: content
+    match: '**/*'
+    exclude: '{posts/**,_index.md,elements.md}'
+    label: Page
+    create: all
+    templates:
+      - page
+  - type: directory
+    path: content/posts
+    match: '**/*'
+    label: Post
+    create: all
+    templates:
+      - post
+  - type: document
+    label: Elements
+    path: content/elements.md
+    templates:
+      - elements
+upload_dir: static/images
+public_path: /images
+front_matter_path: ''
+use_front_matter_path: false
+file_template: ':filename:'
+version: '0.47'

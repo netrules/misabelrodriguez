@@ -1,0 +1,9 @@
+{{ define "content" }}
+
+    <h1>{{ .Title }}</h1>
+    {{ if .Params.img_src }}
+        <span class="image main"><img src="{{ .Params.img_src | relURL }}" alt="" /></span>
+    {{ end }}
+    {{ .Content }}
+
+{{ end }}

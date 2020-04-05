@@ -1,0 +1,8 @@
+title: Phantom
+baseURL: /
+params:
+  none: ''
+disableKinds:
+  - RSS
+  - taxonomy
+  - taxonomyTerm
