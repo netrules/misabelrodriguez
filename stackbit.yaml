@@ -32,6 +32,11 @@ models:
         description: Site title
         required: true
       - type: string
+        name: cloudinary_url
+        label: Cloudinary URL
+        description: Images CDN
+        required: false
+      - type: string
         name: baseURL
         label: Base URL
         description: Hostname (and path) to the root

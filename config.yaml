@@ -1,5 +1,6 @@
 ---
 title: María Isabel Rodríguez Núñez
+cloudinary_url: "https://res.cloudinary.com/demo/image/upload"
 baseURL: "/"
 params:
   none: ''
