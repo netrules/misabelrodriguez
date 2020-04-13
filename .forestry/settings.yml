@@ -55,7 +55,7 @@ sections:
   templates:
   - elements
 upload_dir: misabelrodriguez
-public_path: "/images"
+public_path: https://res.cloudinary.com/sgonzalez/image/upload
 front_matter_path: ''
 use_front_matter_path: 
 file_template: ":filename:"
