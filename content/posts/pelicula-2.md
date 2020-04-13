@@ -1,10 +1,10 @@
 ---
 title: Pelicula 2
 home_style: style1
-home_img: "/images/IMG_20191024_172337.jpg"
-excerpt: en blanco por ahora
+home_img: "/images/pelicula-2/01.jpg"
+excerpt: Asistente del departamento de arte
 date: 2020-04-13T04:00:00+00:00
-img_src: images/pic13.jpg
+img_src:
 layout: page
 
 ---

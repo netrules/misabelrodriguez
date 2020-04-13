@@ -1656,13 +1656,13 @@ button,
                 .tiles article > a .content > :last-child {
                     margin-bottom: 0; }
         .tiles article.style1 > .image:before {
-            background-color: #f2849e; }
+            background-color: #f2e884; }
         .tiles article.style2 > .image:before {
-            background-color: #7ecaf6; }
+            background-color: #999999; }
         .tiles article.style3 > .image:before {
-            background-color: #7bd0c1; }
+            background-color: #f2849e; }
         .tiles article.style4 > .image:before {
-            background-color: #c75b9b; }
+            background-color: #7ecaf6; }
         .tiles article.style5 > .image:before {
             background-color: #ae85ca; }
         .tiles article.style6 > .image:before {

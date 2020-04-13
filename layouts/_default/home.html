@@ -1,7 +1,7 @@
 {{ define "content" }}
 
     <header>
-        <h1>{{ replace .Params.header "\n" "<br />" | safeHTML }}</h1>
+        <h1>{{ .Site.Title }}</h1>
         {{ .Content }}
     </header>
     <section class="tiles">
