@@ -1,7 +1,7 @@
 ---
 title: Pelicula 1
 home_style: style2
-home_img: images/pelicula-1/01.jpg
+home_img: pelicula-1/01.jpg
 excerpt: Asistente del departamento de arte
 date: 2020-04-12T04:00:00+00:00
 img_src: 
