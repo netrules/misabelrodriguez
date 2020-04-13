@@ -1,9 +1,9 @@
 .inner header img,
+#main .inner img,
 .wrapper .main .inner .tiles article a .content img{
     max-width: 100% !important;
 }
 
-#main .inner img {
+.tiles article > .image {
     width: 300px;
-    height: 300px;
 }
