@@ -1,6 +1,6 @@
 ---
 title: Inicio
-header: Bienvenidos al mundo de Misabel Rodríguez
+header: PORTAFOLIOS
 layout: home
 menu:
   main:
