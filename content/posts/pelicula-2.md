@@ -1,7 +1,7 @@
 ---
 title: Pelicula 2
 home_style: style1
-home_img: https://res.cloudinary.com/sgonzalez/image/upload/v1586796702/misabelrodriguez/pelicula-2/01.jpg
+home_img: pelicula-2/01.jpg
 excerpt: Asistente del departamento de arte
 date: 2020-04-12T04:00:00.000+00:00
 img_src: 

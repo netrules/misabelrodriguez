@@ -2,7 +2,7 @@
 
     <header>
         <h1>{{ .Site.Title }}</h1>
-        {{ .Content }} cloudinary: {{  .Site.Params.cloudinary_url }}
+        {{ .Content }}
     </header>
     <section class="tiles">
         {{ range $post := ((.Site.GetPage "section" "/posts").Pages).ByDate.Reverse }}
