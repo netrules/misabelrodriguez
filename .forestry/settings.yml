@@ -54,7 +54,7 @@ sections:
   label: Elements
   templates:
   - elements
-upload_dir: static/images
+upload_dir: misabelrodriguez
 public_path: "/images"
 front_matter_path: ''
 use_front_matter_path: 
