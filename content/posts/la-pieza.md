@@ -3,7 +3,7 @@ title: La Pieza
 home_style: style4
 home_img: la-pieza/01.jpg
 excerpt: Set decor / Set dresser
-date: 2020-04-11T04:00:00+00:00
+date: '2020-04-10'
 img_src: 
 layout: page
 

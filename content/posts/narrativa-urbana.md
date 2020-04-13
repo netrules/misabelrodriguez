@@ -3,7 +3,7 @@ title: Narrativa Urbana
 home_style: style6
 home_img: narrativa-urbana/01.jpg
 excerpt: Proyecto de Grado
-date: '2020-04-13'
+date: '2020-04-03'
 img_src: 
 layout: page
 ---

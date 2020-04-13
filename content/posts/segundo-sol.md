@@ -3,7 +3,7 @@ title: Segundo Sol
 home_style: style3
 home_img: segundo-sol/01.jpg
 excerpt: Set Designer
-date: '2020-04-13'
+date: '2020-04-06'
 img_src:
 layout: page
 ---

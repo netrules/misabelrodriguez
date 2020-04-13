@@ -3,7 +3,7 @@ title: Manzana
 home_style: style1
 home_img: manzana/01.jpg
 excerpt: Set Designer
-date: '2020-04-13'
+date: '2020-04-05'
 img_src: 
 layout: page
 ---

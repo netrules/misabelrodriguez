@@ -3,7 +3,7 @@ title: Cocote
 home_style: style3
 home_img: cocote/01.jpg
 excerpt: Asistente del departamento de arte
-date: 2020-04-12T04:00:00.000+00:00
+date: '2020-04-11'
 img_src: 
 layout: page
 

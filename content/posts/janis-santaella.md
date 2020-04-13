@@ -3,7 +3,7 @@ title: Janis Santaella
 home_style: style5
 home_img: janis-santaella/01.jpg
 excerpt: Set decor / Coordinadora audiovisual
-date: '2020-04-13'
+date: '2020-04-09'
 img_src: 
 layout: page
 ---
