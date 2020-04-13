@@ -1,9 +1,9 @@
 ---
 title: Pelicula 2
 home_style: style1
-home_img: "/images/pelicula-2/01.jpg"
+home_img: https://res.cloudinary.com/sgonzalez/image/upload/v1586798352/misabelrodriguez/cocote/01_nuejzi.jpg
 excerpt: Asistente del departamento de arte
-date: 2020-04-12T04:00:00+00:00
+date: 2020-04-12T04:00:00.000+00:00
 img_src: 
 layout: page
 
