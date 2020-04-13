@@ -50,3 +50,10 @@ fields:
   label: Ugly URLs
   description: When enabled, creates URL of the form /filename.html instead of /filename/.
   hidden: true
+- name: cloudinary_url
+  type: text
+  config:
+    required: false
+  label: Cloudinary URL
+  description: Images CDN
+  default: https://res.cloudinary.com/sgonzalez/image/upload/misabelrodriguez/
