@@ -2,13 +2,13 @@
 
     <header>
         <h1>{{ .Site.Title }}</h1>
-        {{ .Content }} cloudinary: {{  .Site.Data.config.cloudinary_url }}
+        {{ .Content }} cloudinary: {{  .Site.Params.cloudinary_url }}
     </header>
     <section class="tiles">
         {{ range $post := ((.Site.GetPage "section" "/posts").Pages).ByDate.Reverse }}
             <article class="{{ $post.Params.home_style }}">
                 <span class="image">
-                    <img src="{{  .Site.Data.config.cloudinary_url }}/{{ $post.Params.home_img | relURL }}" alt="" />
+                    <img src="{{  .Site.Params.cloudinary_url }}/{{ $post.Params.home_img | relURL }}" alt="" />
                 </span>
                 <a href="{{ $post.URL }}">
                     <h2>{{ $post.Title }}</h2>

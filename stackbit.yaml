@@ -32,11 +32,6 @@ models:
         description: Site title
         required: true
       - type: string
-        name: cloudinary_url
-        label: Cloudinary URL
-        description: Images CDN
-        required: false
-      - type: string
         name: baseURL
         label: Base URL
         description: Hostname (and path) to the root
@@ -48,11 +43,11 @@ models:
         required: true
         fields:
           - type: string
-            name: none
-            label: None
+            name: cloudinary_url
+            label: Cloudinary URL ref
             default: ''
             hidden: true
-            description: There are no config params
+            description: To use Image CDN
       - type: site_menus
         name: menu
         label: Site Menus
