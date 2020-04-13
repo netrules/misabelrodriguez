@@ -1,7 +1,7 @@
 ---
 title: Milee Collection
 home_style: style6
-home_img: https://res.cloudinary.com/sgonzalez/image/upload/misabelrodriguez/milee-collection/01.jpg
+home_img: https://res.cloudinary.com/sgonzalez/image/upload/t_misabel_preview/misabelrodriguez/milee-collection/01.jpg
 excerpt: Construcción
 date: '2020-04-08'
 img_src: 
