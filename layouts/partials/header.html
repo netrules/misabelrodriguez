@@ -4,7 +4,7 @@
 
         <!-- Logo -->
         <a href="{{ "/" | relURL }}" class="logo">
-            <span class="symbol"><img src="{{ .Site.Data.header.logo_img_src | relURL }}" alt="" /></span><span class="title">{{ replace .Site.Title "\n" "<br />" | safeHTML }}</span>
+            <span class="symbol"><img src="{{ .Site.Data.header.logo_img_src | relURL }}" alt="" /></span><span class="title">{{ replace .Params.header "\n" "<br />" | safeHTML }}</span>
         </a>
         
         <!-- Nav -->
