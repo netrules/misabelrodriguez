@@ -4,7 +4,13 @@
 
         <!-- Logo -->
         <a href="{{ "/" | relURL }}" class="logo">
-            <span class="symbol"><img src="{{ .Site.Data.header.logo_img_src | relURL }}" alt="" /></span><span class="title">{{ replace .Params.header "\n" "<br />" | safeHTML }}</span>
+            <span class="symbol"><img src="{{ .Site.Data.header.logo_img_src | relURL }}" alt="" /></span><span class="title">
+            {{ if .Params.header }}
+                {{ replace .Params.header "\n" "<br />" | safeHTML }}
+            {{ else }}
+                {{ replace .Title "\n" "<br />" | safeHTML }}
+            {{ end }}
+            </span>
         </a>
         
         <!-- Nav -->
