@@ -1,5 +1,5 @@
 ---
-title: Feugiat
+title: Cocote
 home_style: style3
 home_img: images/cocote/01.jpg
 excerpt: Asistente del departamento de arte
