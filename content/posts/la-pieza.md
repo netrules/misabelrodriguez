@@ -1,7 +1,7 @@
 ---
 title: La Pieza
 home_style: style4
-home_img: la-pieza/01.jpg
+home_img: https://res.cloudinary.com/sgonzalez/image/upload/misabelrodriguez/la-pieza/01.jpg
 excerpt: Set decor / Set dresser
 date: '2020-04-10'
 img_src: 

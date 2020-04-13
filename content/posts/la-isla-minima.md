@@ -1,7 +1,7 @@
 ---
 title: La Isla Minima
 home_style: style5
-home_img: la-isla-minima/01.jpg
+home_img: https://res.cloudinary.com/sgonzalez/image/upload/misabelrodriguez/la-isla-minima/01.jpg
 excerpt: Coordinadora de arte
 date: '2020-04-04'
 img_src: 
