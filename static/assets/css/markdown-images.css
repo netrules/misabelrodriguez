@@ -3,7 +3,3 @@
 .wrapper .main .inner .tiles article a .content img{
     max-width: 100% !important;
 }
-
-.tiles article > .image {
-    width: 300px;
-}
