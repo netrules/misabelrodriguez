@@ -191,7 +191,7 @@ $('.imageBind').click(function(){
 var span = document.getElementsByClassName("modal-close")[0];
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+modal.onclick = function() {
   modal.style.display = "none";
   modalclose.style.display = "none";
 }
