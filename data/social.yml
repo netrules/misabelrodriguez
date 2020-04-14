@@ -2,6 +2,9 @@
 enabled: true
 title: Redes Sociales
 follow_section:
+- title: Linkedin
+  icon: fa-linkedin
+  link_url: https://www.linkedin.com/in/mar%C3%ADa-isabel-rodr%C3%ADguez-n%C3%BA%C3%B1ez-771387130/
 - title: Instagram
   icon: fa-instagram
   link_url: https://www.instagram.com/misabelrguezn/
