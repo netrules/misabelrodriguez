@@ -2,7 +2,6 @@
     <h2>{{ .Site.Data.social.title }}</h2>
     <ul class="icons">
         {{ range $link := .Site.Data.social.follow_section }}
-        {{ $link_url := string ( $link.link_url ) }}
             <li><a {{ printf "href=%q" $link.link_url | safeHTMLAttr }} class="icon style2 {{ $link.icon }}"><span class="label">{{ $link.title }}</span></a></li>
         {{ end }}
     </ul>
