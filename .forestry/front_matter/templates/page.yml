@@ -19,6 +19,4 @@ fields:
   config:
     required: true
 pages:
-- content/consequat-dolor.md
-- content/generic.md
-- content/tempus-etiam.md
+- content/acerca-mi.md

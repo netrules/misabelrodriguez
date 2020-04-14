@@ -4,7 +4,7 @@ img_src:
 template: page
 menus:
   main:
-    weight: 2
+    weight: 0
     title: Acerca de mi
 ---
 
