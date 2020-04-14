@@ -1,7 +1,7 @@
 ---
 title: Pelicula 1
 home_style: style2
-home_img: https://res.cloudinary.com/sgonzalez/image/upload/misabelrodriguez/pelicula-1/thumbnail.png
+home_img: https://res.cloudinary.com/sgonzalez/image/upload/misabelrodriguez/pelicula-1/
 excerpt: Asistente del departamento de arte
 date: '2020-04-12'
 img_src: 

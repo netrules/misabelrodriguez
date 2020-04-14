@@ -1,7 +1,7 @@
 ---
 title: Janis Santaella
 home_style: style5
-home_img: https://res.cloudinary.com/sgonzalez/image/upload/misabelrodriguez/janis-santaella/thumbnail.png
+home_img: https://res.cloudinary.com/sgonzalez/image/upload/misabelrodriguez/janis-santaella/
 excerpt: Set decor / Coordinadora audiovisual
 date: '2020-04-09'
 img_src: 

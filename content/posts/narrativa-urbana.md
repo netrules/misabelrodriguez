@@ -1,7 +1,7 @@
 ---
 title: Narrativa Urbana
 home_style: style6
-home_img: https://res.cloudinary.com/sgonzalez/image/upload/misabelrodriguez/narrativa-urbana/thumbnail.png
+home_img: https://res.cloudinary.com/sgonzalez/image/upload/misabelrodriguez/narrativa-urbana/
 excerpt: Proyecto de Grado
 date: '2020-04-03'
 img_src: 
