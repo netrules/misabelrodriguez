@@ -1,15 +1,16 @@
 ---
 title: Acerca de mi
-img_src: 
+img_src: ''
 template: page
 menus:
   main:
     weight: 0
     title: Acerca de mi
+layout: ''
 menu:
   main:
     name: Acerca de Mi
     weight: 2
 
 ---
-EMPTY FOR THE MOMENT
+EMPTY FOR THE MOMENTa
