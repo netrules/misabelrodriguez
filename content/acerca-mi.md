@@ -13,4 +13,4 @@ menu:
     weight: 2
 
 ---
-EMPTY FOR THE MOMENTa
+EMPTY FOR THE MOMENT
