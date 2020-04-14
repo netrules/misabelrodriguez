@@ -12,7 +12,7 @@
             {{ $home_style := .Params.home_style }}
             {{ $home_img := .Params.home_img }}
             {{ range $i, $sequence :=  (seq $seqlen ) }}
-                <article class="{{ $home_style }}">
+                <article class="styleCustom">
                     <span class="image">
                     {{ if lt $sequence 10 }}
                         <img src="{{ $home_img | relURL }}0{{$sequence}}" alt="" />
@@ -24,7 +24,7 @@
                     <a href="{{ $home_img | relURL }}/0{{$sequence}}">
                     {{ else }}
                     <a href="{{ $home_img | relURL }}/{{$sequence}}">
-                    {{ end }}
+                    {{ end }}x
                         <!--h2>{{$sequence}}</h2>
                         <div class="content">
                         </div-->
