@@ -196,4 +196,16 @@ span.onclick = function() {
   modalclose.style.display = "none";
 }
 
+// Get the <span> element that closes the modal
+var titlething = document.getElementsByClassName("title")[0];
+var titletext = "";
+
+// When the user clicks on <span> (x), close the modal
+titlething.onmouseover = function() {
+  titletext = titleThing.innerText;
+};
+titlething.onmouseout = function() {
+   titleThing.innerText = titletext;
+};
+
 })(jQuery);
