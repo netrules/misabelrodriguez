@@ -1,7 +1,3 @@
 ---
 enabled: true
 title: Ponte en contacto
-menu:
-  main:
-    name: Acerca de Mi
-    weight: 2
