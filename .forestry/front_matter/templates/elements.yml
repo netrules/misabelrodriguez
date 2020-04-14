@@ -14,5 +14,3 @@ fields:
   default: elements
   config:
     required: true
-pages:
-- content/elements.md

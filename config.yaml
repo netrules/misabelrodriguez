@@ -2,7 +2,7 @@
 title: María Isabel Rodríguez Núñez
 baseURL: "/"
 params:
-  cloudinary_url: "https://res.cloudinary.com/sgonzalez/image/upload/misabelrodriguez"
+  cloudinary_url: https://res.cloudinary.com/sgonzalez/image/upload/misabelrodriguez
 disableKinds:
 - RSS
 - taxonomy

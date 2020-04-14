@@ -54,12 +54,3 @@ fields:
   default: page
   config:
     required: true
-pages:
-- content/posts/aliquam.md
-- content/posts/dictum.md
-- content/posts/dolor.md
-- content/posts/ipsum.md
-- content/posts/nullam.md
-- content/posts/pretium.md
-- content/posts/ultricies.md
-- content/posts/veroeros.md
