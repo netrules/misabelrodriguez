@@ -195,23 +195,6 @@ if(modal) {
     var titlething = document.getElementsByClassName("title")[0];
     var titletext = "";
 
-    var repeatChar = function (count, ch) {
-        if (count == 0) {
-            return "";
-        }
-        var count2 = count / 2;
-        var result = ch;
-
-        // double the input until it is long enough.
-        while (result.length <= count2) {
-            result += result;
-        }
-        // use substring to hit the precise length target without
-        // using extra memory
-        return result + result.substring(0, count - result.length);
-    };
-
-
     // When the user clicks on <span> (x), close the modal
     titlehover.onmouseover = function() {
         titletext = titlething.innerText;
@@ -220,7 +203,7 @@ if(modal) {
         if(totalLen < 0) {
             totalLen = 0;
         }
-        titlething.innerText = volverText + repeatChar(" ", totalLen);
+        titlething.innerText = volverText +new Array(totalLen + 1).join( "  " );
     };
     titlehover.onmouseout = function() {
         titlething.innerText = titletext;
