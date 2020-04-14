@@ -174,8 +174,6 @@
 // Get the modal
 var modal = document.getElementById('myModal');
 if(modal) {
-    var modalclose = document.getElementById('modal-close');
-
     // Get the image and insert it inside the modal - use its "alt" text as a caption
     var img = $('.myImg');
     var modalImg = $("#img01");
@@ -188,13 +186,9 @@ if(modal) {
     //    captionText.innerHTML = this.alt;
     });
 
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("modal-close")[0];
-
     // When the user clicks on <span> (x), close the modal
     modal.onclick = function() {
-    modal.style.display = "none";
-    modalclose.style.display = "none";
+        modal.style.display = "none";
     }
 
     // Get the <span> element that closes the modal
@@ -203,11 +197,11 @@ if(modal) {
 
     // When the user clicks on <span> (x), close the modal
     titlething.onmouseover = function() {
-    titletext = titlething.innerText;
-    titlething.innerText = "VOLVER ...";
+        titletext = titlething.innerText;
+        titlething.innerText = "VOLVER ...";
     };
-    titlething.onmouseout = function() {
-    titlething.innerText = titletext;
+        titlething.onmouseout = function() {
+        titlething.innerText = titletext;
     };
 }
 
