@@ -173,6 +173,7 @@
         // src: https://stackoverflow.com/questions/41275958/modal-image-galleries-multiple-images
 // Get the modal
 var modal = document.getElementById('myModal');
+var modalclose = document.getElementById('modal-close');
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var img = $('.myImg');
@@ -180,6 +181,7 @@ var modalImg = $("#img01");
 //var captionText = document.getElementById("caption");
 $('.imageBind').click(function(){
     modal.style.display = "block";
+    modalclose.style.display = "block";
     var newSrc = this.src;
     modalImg.attr('src', newSrc);
 //    captionText.innerHTML = this.alt;
@@ -191,6 +193,7 @@ var span = document.getElementsByClassName("close")[0];
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
+  modalclose.style.display = "none";
 }
 
 })(jQuery);

@@ -70,14 +70,14 @@
 }
 
 /* The Close Button */
-.close {
+.modal-close {
     position: absolute;
-    top: 35%;
-    right: 35px;
+    left: 50%;
     color: #f1f1f1;
     font-size: 40px;
     font-weight: bold;
     transition: 0.3s;
+    display: none;
 
     &:hover,
     &:focus {
