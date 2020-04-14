@@ -1,7 +1,7 @@
 ---
 title: Cocote
 home_style: style3
-home_img: https://res.cloudinary.com/sgonzalez/image/upload/misabelrodriguez/cocote/thumbnail.png
+home_img: https://res.cloudinary.com/sgonzalez/image/upload/misabelrodriguez/cocote/
 excerpt: Asistente del departamento de arte
 date: '2020-04-11'
 img_src: 
