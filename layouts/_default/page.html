@@ -9,15 +9,15 @@
     <section class="tiles">
         {{ if .Params.collection_items }}
             {{ range $i, $sequence :=  (seq .Params.collection_items) }}
-                <article class="{{ $Params.home_style }}">
+                <article class="{{ .Params.home_style }}">
                     <span class="image">
                     {{ if lt $sequence 10 }}
-                        <img src="{{ $Params.home_img | relURL }}/0{{$sequence}}" alt="" />
+                        <img src="{{ .Params.home_img | relURL }}/0{{$sequence}}" alt="" />
                     {{ else }}
-                        <img src="{{ $Params.home_img | relURL }}/{{$sequence}}" alt="" />
+                        <img src="{{ .Params.home_img | relURL }}/{{$sequence}}" alt="" />
                     {{ end }}
                     </span>
-                    <a href="{{ $Params.home_img | relURL }}/{{$sequence}}">
+                    <a href="{{ .Params.home_img | relURL }}/{{$sequence}}">
                         <h2>{{$i}}</h2>
                         <div class="content">
                             <!-- empty text -->
