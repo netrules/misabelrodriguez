@@ -173,40 +173,42 @@
         // src: https://stackoverflow.com/questions/41275958/modal-image-galleries-multiple-images
 // Get the modal
 var modal = document.getElementById('myModal');
-var modalclose = document.getElementById('modal-close');
+if(modal) {
+    var modalclose = document.getElementById('modal-close');
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = $('.myImg');
-var modalImg = $("#img01");
-//var captionText = document.getElementById("caption");
-$('.imageBind').click(function(){
-    modal.style.display = "block";
-    modalclose.style.display = "block";
-    var newSrc = this.src;
-    modalImg.attr('src', newSrc);
-//    captionText.innerHTML = this.alt;
-});
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = $('.myImg');
+    var modalImg = $("#img01");
+    //var captionText = document.getElementById("caption");
+    $('.imageBind').click(function(){
+        modal.style.display = "block";
+        modalclose.style.display = "block";
+        var newSrc = this.src;
+        modalImg.attr('src', newSrc);
+    //    captionText.innerHTML = this.alt;
+    });
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("modal-close")[0];
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("modal-close")[0];
 
-// When the user clicks on <span> (x), close the modal
-modal.onclick = function() {
-  modal.style.display = "none";
-  modalclose.style.display = "none";
+    // When the user clicks on <span> (x), close the modal
+    modal.onclick = function() {
+    modal.style.display = "none";
+    modalclose.style.display = "none";
+    }
+
+    // Get the <span> element that closes the modal
+    var titlething = document.getElementsByClassName("title")[0];
+    var titletext = "";
+
+    // When the user clicks on <span> (x), close the modal
+    titlething.onmouseover = function() {
+    titletext = titlething.innerText;
+    titlething.innerText = "VOLVER ...";
+    };
+    titlething.onmouseout = function() {
+    titlething.innerText = titletext;
+    };
 }
-
-// Get the <span> element that closes the modal
-var titlething = document.getElementsByClassName("title")[0];
-var titletext = "";
-
-// When the user clicks on <span> (x), close the modal
-titlething.onmouseover = function() {
-  titletext = titlething.innerText;
-  titlething.innerText = "VOLVER ...";
-};
-titlething.onmouseout = function() {
-   titlething.innerText = titletext;
-};
 
 })(jQuery);
