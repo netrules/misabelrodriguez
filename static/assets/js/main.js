@@ -191,11 +191,12 @@ if(modal) {
     }
 
     // Get the <span> element that closes the modal
-    var titlething = document.getElementsByClassName("logo")[0];
+    var titlehover = document.getElementsByClassName("logo")[0];
+    var titlething = document.getElementsByClassName("title")[0];
     var titletext = "";
 
     // When the user clicks on <span> (x), close the modal
-    titlething.onmouseover = function() {
+    titlehover.onmouseover = function() {
         titletext = titlething.innerText;
         let volverText = "VOLVER ...";
         let totalLen = titletext.length-volverText.length;
@@ -204,7 +205,7 @@ if(modal) {
         }
         titlething.innerText = volverTxt + StringUtils.repeat(" ", totalLen);
     };
-        titlething.onmouseout = function() {
+    titlehover.onmouseout = function() {
         titlething.innerText = titletext;
     };
 }
