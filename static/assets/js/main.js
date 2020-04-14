@@ -202,7 +202,7 @@ var titletext = "";
 
 // When the user clicks on <span> (x), close the modal
 titlething.onmouseover = function() {
-  titletext = titleThing.innerText;
+  titletext = titlething.innerText;
   titlething.innerText = "VOLVER ...";
 };
 titlething.onmouseout = function() {
