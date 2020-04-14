@@ -1,6 +1,6 @@
 ---
 title: Acerca de mi
-img_src: images/pic13.jpg
+img_src: 
 template: page
 menus:
   main:
