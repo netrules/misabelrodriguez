@@ -160,6 +160,12 @@
 				}
 			}
 
+			&.styleCustom {
+				> .image:before {
+					background-color: _palette(accentCustom);
+				}
+			}
+
 			body:not(.is-touch) & {
 				&:hover {
 					> .image {

@@ -6,7 +6,7 @@
     </header>
     <section class="tiles">
         {{ range $post := ((.Site.GetPage "section" "/posts").Pages).ByDate.Reverse }}
-            <article class="{{ $post.Params.home_style }}">
+            <article class="styleCustom">
                 <span class="image">
                     <img src="{{ $post.Params.home_img | relURL }}thumbnail.png" alt="" />
                 </span>
