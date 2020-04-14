@@ -203,7 +203,7 @@ if(modal) {
         if(totalLen < 0) {
             totalLen = 0;
         }
-        titlething.innerText = volverTxt + StringUtils.repeat(" ", totalLen);
+        titlething.innerText = volverText + StringUtils.repeat(" ", totalLen);
     };
     titlehover.onmouseout = function() {
         titlething.innerText = titletext;
