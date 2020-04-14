@@ -15,7 +15,7 @@
                 <article class="styleCustom">
                     <span class="image">
                     {{ if lt $sequence 10 }}
-                        <img class="imageBind" src="{{ $home_img | relURL }}0{{$sequence}}" alt="" />
+                        <img class="imageBind" src="{{ $home_img | relURL }}0{{$sequence}}.jpg" alt="" />
                     {{ else }}
                         <img class="imageBind" src="{{ $home_img | relURL }}{{$sequence}}" alt="" />
                     {{ end }}
