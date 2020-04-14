@@ -7,10 +7,6 @@ menus:
     weight: 0
     title: Acerca de mi
 layout: ''
-menu:
-  main:
-    name: Acerca de Mi
-    weight: 2
 
 ---
 EMPTY FOR THE MOMENT
