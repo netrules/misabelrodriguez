@@ -8,7 +8,7 @@
     
     <section class="tiles">
         {{ if .Params.collection_items }}
-            {{ $seqlen := int .Params.collection_items }}
+            {{ $seqlen := int ( .Params.collection_items ) }}
             {{ range $i, $sequence :=  (seq $seqlen ) }}
                 <article class="{{ .Params.home_style }}">
                     <span class="image">
