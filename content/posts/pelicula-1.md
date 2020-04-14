@@ -6,7 +6,7 @@ excerpt: Asistente del departamento de arte
 date: '2020-04-12'
 img_src: 
 layout: page
-
+collection_items: 7
 ---
 Este proyecto, realizado en Diciembre 2018, trata de una película extranjera cuyo relato toma lugar en Miami. Mi función en este proyecto toma lugar en el Departamento de arte como compradora, asistente decorativa dentro y fuera del rodaje. Este set es el apartamento del protagonista donde la película toma grande parte del rodaje.
 

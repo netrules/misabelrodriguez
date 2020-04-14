@@ -5,5 +5,12 @@
         <span class="image main"><img src="{{ .Params.img_src | relURL }}" alt="" /></span>
     {{ end }}
     {{ .Content }}
+    {{ if .Params.collection_items }}
+        {{ range $i, $sequence :=  (seq 5) }}
+            <p>{{ $i }}: {{ $sequence }}</p>
+        {{ end }}
+        fmt.Println(sum) // 10 (1+2+3+4)
+
+    {{ end }}
 
 {{ end }}

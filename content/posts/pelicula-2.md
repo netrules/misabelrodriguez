@@ -6,7 +6,7 @@ excerpt: Asistente del departamento de arte
 date: '2020-04-13'
 img_src: 
 layout: page
-
+collection_items: 11
 ---
 Este proyecto, realizado desde Octubre 2019 a Noviembre 2019, trata de una película extranjera cuyo relato toma lugar en México. Mi función en esta producción toma lugar en el Departamento de arte, específicamente en la supervisión, asistencia y compra de materiales para la construcción de los sets.
 

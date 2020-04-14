@@ -6,6 +6,7 @@ excerpt: Set decor / Coordinadora audiovisual
 date: '2020-04-09'
 img_src: 
 layout: page
+collection_items: 3
 ---
 
 Empresa de psicología donde mi función principal era de diseño gráfico y manejo de redes sociales. Al paso del tiempo fui creadora de contenido que incluía el diseño de sets para las redes sociales.

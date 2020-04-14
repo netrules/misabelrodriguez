@@ -6,6 +6,7 @@ excerpt: Set Designer
 date: '2020-04-07'
 img_src:
 layout: page
+collection_items: 3
 ---
 
 Propuesta de diseño de set para escenario de la banda musical dominicana The Cat Lady. 
