@@ -20,15 +20,6 @@
                         <img src="{{ $home_img | relURL }}{{$sequence}}" alt="" />
                     {{ end }}
                     </span>
-                    {{ if lt $sequence 10 }}
-                    <a href="{{ $home_img | relURL }}/0{{$sequence}}">
-                    {{ else }}
-                    <a href="{{ $home_img | relURL }}/{{$sequence}}">
-                    {{ end }}
-                        <!--h2>{{$sequence}}</h2>
-                        <div class="content">
-                        </div-->
-                    </a>
                 </article>
             {{ end }}
 
