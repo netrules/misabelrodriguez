@@ -191,7 +191,7 @@ if(modal) {
     }
 
     // Get the <span> element that closes the modal
-    var titlething = document.getElementsByClassName("title")[0];
+    var titlething = document.getElementsByClassName("logo")[0];
     var titletext = "";
 
     // When the user clicks on <span> (x), close the modal
