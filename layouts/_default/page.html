@@ -9,16 +9,18 @@
     <section class="tiles">
         {{ if .Params.collection_items }}
             {{ $seqlen := int ( .Params.collection_items ) }}
+            {{ $home_style := int ( .Params.home_style ) }}
+            {{ $home_img := int ( .Params.home_img ) }}
             {{ range $i, $sequence :=  (seq $seqlen ) }}
-                <article class="{{ .Params.home_style }}">
+                <article class="{{ $home_style }}">
                     <span class="image">
                     {{ if lt $sequence 10 }}
-                        <img src="{{ .Params.home_img | relURL }}/0{{$sequence}}" alt="" />
+                        <img src="{{ $home_img | relURL }}/0{{$sequence}}" alt="" />
                     {{ else }}
-                        <img src="{{ .Params.home_img | relURL }}/{{$sequence}}" alt="" />
+                        <img src="{{ $home_img | relURL }}/{{$sequence}}" alt="" />
                     {{ end }}
                     </span>
-                    <a href="{{ .Params.home_img | relURL }}/{{$sequence}}">
+                    <a href="{{ $home_img | relURL }}/{{$sequence}}">
                         <h2>{{$i}}</h2>
                         <div class="content">
                             <!-- empty text -->
