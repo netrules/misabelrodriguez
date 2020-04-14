@@ -180,7 +180,6 @@ if(modal) {
     //var captionText = document.getElementById("caption");
     $('.imageBind').click(function(){
         modal.style.display = "block";
-        modalclose.style.display = "block";
         var newSrc = this.src;
         modalImg.attr('src', newSrc);
     //    captionText.innerHTML = this.alt;
