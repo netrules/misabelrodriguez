@@ -29,8 +29,14 @@
 .modal-content {
     margin: auto;
     display: block;
-    width: 80%;
-    max-width: 700px;
+    // width: 80%;
+    // max-width: 700px;
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+    height:100vh; 
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
@@ -66,7 +72,7 @@
 /* The Close Button */
 .close {
     position: absolute;
-    top: 15px;
+    top: 35%;
     right: 35px;
     color: #f1f1f1;
     font-size: 40px;

@@ -170,6 +170,7 @@
 			}
 		});
 
+        // src: https://stackoverflow.com/questions/41275958/modal-image-galleries-multiple-images
 // Get the modal
 var modal = document.getElementById('myModal');
 
@@ -191,7 +192,5 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() {
   modal.style.display = "none";
 }
-
-
 
 })(jQuery);
