@@ -199,7 +199,7 @@ if(modal) {
     titlehover.onmouseover = function() {
         titletext = titlething.innerText;
         let volverText = "VOLVER ...";
-        let totalLen = titletext.length-volverText.length;
+        let totalLen = titletext.length-volverText.length+2;
         if(totalLen < 0) {
             totalLen = 0;
         }
