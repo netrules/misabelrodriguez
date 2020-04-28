@@ -1,0 +1,25 @@
+<!-- Header -->
+<header id="header">
+    <div class="inner">
+
+        <!-- Logo -->
+        <a href="{{ "/" | relURL }}" class="logo">
+            <span class="symbol"><img src="{{ .Site.Data.header.logo_img_src | relURL }}" alt="" /></span><span class="title">
+            {{ if .Params.header }}
+                {{ replace .Params.header "\n" "<br />" | safeHTML }}
+            {{ else }}
+                Portafolios > {{ replace .Title "\n" "<br />" | safeHTML }}
+            {{ end }}
+            </span>
+        </a>
+        
+        <!-- Nav -->
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+            </ul>
+              <!-- The Close Button -->
+        </nav>
+
+    </div>
+</header>

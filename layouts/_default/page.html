@@ -1,0 +1,40 @@
+{{ define "content" }}
+
+    <!--h1>{{ .Title }}</h1-->
+    {{ if .Params.img_src }}
+        <span class="image main"><img src="{{ .Params.img_src | relURL }}" alt="" /></span>
+    {{ end }}
+    {{ .Content }}
+    
+    <section class="tiles">
+        {{ if .Params.collection_items }}
+            {{ $seqlen := int ( .Params.collection_items ) }}
+            {{ $home_style := .Params.home_style }}
+            {{ $home_img := .Params.home_img }}
+            {{ $prefix_url_thumb := .Site.Params.cloudinary_url_thumb }}
+            {{ $prefix_url := .Site.Params.cloudinary_url }}
+            {{ range $i, $sequence :=  (seq $seqlen ) }}
+                <article class="styleCustom">
+                    <span class="image">
+                    {{ if lt $sequence 10 }}
+                        <img loading="lazy" class="imageBind" src="{{ $prefix_url_thumb }}{{ $home_img }}/0{{$sequence}}.jpg" data-original="{{ $prefix_url }}{{ $home_img }}/0{{$sequence}}.jpg" alt="" />
+                    {{ else }}
+                        <img loading="lazy" class="imageBind" src="{{ $prefix_url_thumb }}{{ $home_img }}/{{$sequence}}" data-original="{{ $prefix_url }}{{ $home_img  }}/{{$sequence}}.jpg" alt="" />
+                    {{ end }}
+                    </span>
+                </article>
+            {{ end }}
+
+        {{ end }}
+    </section>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="img01">
+
+    <!-- Modal Caption (Image Text) -->
+    <!--div id="caption"></div-->
+    <progress id="progress" value="0" max="100" style="position:absolute; bottom:0; width: 100%;"></progress>
+</div>
+{{ end }}

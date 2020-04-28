@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+    <head>    
+        
+        <title>{{ if .Title }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+        {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+        {{ with .Site.Params.keywords }}<meta name="keywords" content="{{ . }}">{{ end }}
+
+        <link rel="icon" type="image/png" href="{{ .Site.Params.favicon_32 | default "/images/favicon-32x32.png" | relURL }}" sizes="32x32">
+        <link rel="icon" type="image/png" href="{{ .Site.Params.favicon_16 | default "/images/favicon-16x16.png" | relURL }}" sizes="16x16">
+
+        <link rel="stylesheet" href="{{ (resources.Get "sass/main.scss" | resources.ToCSS (dict "indentWidth" 4 "outputStyle" "nested" "precision" 10 "targetPath" "assets/css/main.css")).RelPermalink }}" />
+        <link rel="stylesheet" href="{{ "assets/css/markdown-images.css" | relURL }}" />
+        <noscript><link rel="stylesheet" href="{{ "assets/css/noscript.css" | relURL }}" /></noscript>
+        
+    </head>
+    <body>
+        
+        <!-- Wrapper -->
+            <div id="wrapper">
+                {{ partial "header.html" . }}
+                <!-- Main -->
+                <div id="main">
+                    <div class="inner">
+                        {{ block "content" . }}{{ end }}
+                    </div>
+                </div>
+                {{ partial "footer.html" . }}
+            </div>
+        
+            {{ partial "menu.html" . }}
+        <!-- Scripts -->
+        <script src="{{ "assets/js/jquery.min.js" | relURL }}"></script>
+        <script src="{{ "assets/js/browser.min.js" | relURL }}"></script>
+        <script src="{{ "assets/js/breakpoints.min.js" | relURL }}"></script>
+        <script src="{{ "assets/js/util.js" | relURL }}"></script>
+        <script data-pace-options='{"ajax":{"trackWebSockets": false}}' src="{{ "assets/js/pace.min.js" | relURL }}"></script>
+        <script src="{{ "assets/js/main.js" | relURL }}"></script>
+    </body> 
+</html>

@@ -1,0 +1,13 @@
+---
+title: María Isabel Rodríguez Núñez
+baseURL: "/"
+params:
+  cloudinary_url: https://res.cloudinary.com/sgonzalez/image/upload/misabelrodriguez/
+  cloudinary_url_thumb: https://res.cloudinary.com/sgonzalez/image/upload/c_thumb,h_512,w_512/misabelrodriguez/
+  author: "María Isabel Rodríguez Núñez"
+  description: "Arquitecta con inclinación en la dirección de arte y los espacios efímeros"
+  keywords: "arquitecta,arte,peliculas,espacios,misabel"
+disableKinds:
+- RSS
+- taxonomy
+- taxonomyTerm

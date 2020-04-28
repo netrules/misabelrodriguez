@@ -1,0 +1,56 @@
+---
+label: Post
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: Page Title
+  config:
+    required: true
+- type: select
+  name: home_style
+  label: Home Thumbnail Style
+  description: The style used for the home thumbnail
+  config:
+    required: true
+    source:
+      type: custom
+    options:
+    - style1
+    - style2
+    - style3
+    - style4
+    - style5
+    - style6
+    - style7
+- type: file
+  name: home_img
+  label: Home Thumbnail Image
+  description: The Image displayed in the home thumbnail on hover
+- type: textarea
+  name: excerpt
+  label: Excerpt
+  description: The text displayed in the home thumbnail on hover
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+- type: datetime
+  name: date
+  label: Post Date
+  config:
+    required: true
+- type: number
+  name: collection_items
+  label: Number of items in collection
+- type: file
+  name: img_src
+  label: Content Image
+  description: The Image displayed in the content section of the page
+- type: text
+  name: layout
+  label: Layout
+  hidden: true
+  default: page
+  config:
+    required: true

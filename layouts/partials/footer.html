@@ -1,0 +1,21 @@
+<!-- Footer -->
+<footer id="footer">
+    <div class="inner">
+        {{ if .Site.Data.contact.enabled }}
+            {{ partial "contact.html" . }}
+        {{ end }}
+        {{ if .Site.Data.social.enabled }}
+            {{ partial "social.html" . }}
+        {{ end }}
+        <ul class="copyright">
+            <li>
+                {{ .Site.Data.footer.copyright | safeHTML }}
+                &nbsp;
+                {{ range $link := .Site.Data.footer.links }}
+                    <a href="{{ $link.url }}" {{ if $link.new_window }}target="_blank" rel="noopener"
+                    {{ end }}>{{ $link.text }}</a>.
+                {{ end }}
+            </li>
+        </ul>
+    </div>
+</footer>

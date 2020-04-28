@@ -1,0 +1,22 @@
+---
+label: Page
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: Page Title
+  config:
+    required: true
+- type: file
+  name: img_src
+  label: Content Image
+  description: The Image displayed in the content section of the page
+- type: text
+  name: layout
+  label: Layout
+  hidden: true
+  default: page
+  config:
+    required: true
+pages:
+- content/acerca-mi.md
