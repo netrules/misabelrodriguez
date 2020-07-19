@@ -227,10 +227,33 @@
 		
     // Get the modal
 	if($modal.length) {
+		// Get the <span> element that closes the modal
+		var titlehover = document.getElementsByClassName("logo")[0];
+		var titlething = document.getElementsByClassName("title")[0];
+		var titletext = "";
+
+		titlehover.onmouseover = function() {
+			titletext = titlething.innerText;
+			let volverText = "VOLVER ...";
+			let totalLen = titletext.length-volverText.length+2;
+			if(totalLen < 0) {
+				totalLen = 0;
+			}
+			titlething.innerText = volverText +new Array(totalLen + 1).join( "  " );
+		};
+		titlehover.onmouseout = function() {
+			titlething.innerText = titletext;
+		};
+        let mql = window.matchMedia('(max-width: 700px)');
+        if(mql.matches) {
+            return;
+        }
+        
 		//Get the image and insert it inside the modal - use its "alt" text as a caption
 		var $img = $('.myImg');
 		var $modalImg = $("#img01");
-		//var captionText = document.getElementById("caption");
+        //var captionText = document.getElementById("caption");
+        
 		$('.imageBind').on('mouseup', function(event){
 			if(event.which != 1) {
 				return;
@@ -258,24 +281,6 @@
             if(event.target != $modalImg)
 			    hideModal();
 		});
-
-		// Get the <span> element that closes the modal
-		var titlehover = document.getElementsByClassName("logo")[0];
-		var titlething = document.getElementsByClassName("title")[0];
-		var titletext = "";
-
-		titlehover.onmouseover = function() {
-			titletext = titlething.innerText;
-			let volverText = "VOLVER ...";
-			let totalLen = titletext.length-volverText.length+2;
-			if(totalLen < 0) {
-				totalLen = 0;
-			}
-			titlething.innerText = volverText +new Array(totalLen + 1).join( "  " );
-		};
-		titlehover.onmouseout = function() {
-			titlething.innerText = titletext;
-		};
 	}
 
 })(jQuery);

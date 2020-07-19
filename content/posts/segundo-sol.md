@@ -1,6 +1,10 @@
 ---
 title: Segundo Sol
+<<<<<<< Updated upstream
 home_style: style3
+=======
+home_style: style5
+>>>>>>> Stashed changes
 home_img: segundo-sol
 excerpt: Set Designer
 date: '2020-04-06'
