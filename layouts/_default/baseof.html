@@ -8,6 +8,19 @@
         {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
         {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
         {{ with .Site.Params.keywords }}<meta name="keywords" content="{{ . }}">{{ end }}
+        
+        <meta property="og:site_name" content="{{ .Site.Title }}">
+        <meta property="og:title" content="{{ .Site.Title }} Portafolios" />
+        <meta property="og:description" content="{{ .Site.Params.description }}" />
+        {{ with .Site.Params.previewurl }}
+        <meta property="og:image" itemprop="image" content="{{ . }}"/>
+        {{ end }}
+        <meta property="og:type" content="website" />
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:width" content="256">
+        <meta property="og:image:height" content="256">
+        <meta property="og:url" content="{{ .Site.BaseURL | absURL }}" />
+        <meta property="og:updated_time" content="{{ now.Unix }}" />
 
         <link rel="icon" type="image/png" href="{{ .Site.Params.favicon_32 | default "/images/favicon-32x32.png" | relURL }}" sizes="32x32">
         <link rel="icon" type="image/png" href="{{ .Site.Params.favicon_16 | default "/images/favicon-16x16.png" | relURL }}" sizes="16x16">
