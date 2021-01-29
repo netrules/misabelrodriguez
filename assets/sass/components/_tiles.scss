@@ -126,43 +126,50 @@
 
 			&.style1 {
 				> .image:before {
-					background-color: _palette(accent1);
+					border: 3px solid _palette(accent1);
+					background-color: _palette(accent2);
 				}
 			}
 
 			&.style2 {
 				> .image:before {
+					border: 3px solid _palette(accent2);
 					background-color: _palette(accent2);
 				}
 			}
 
 			&.style3 {
 				> .image:before {
-					background-color: _palette(accent3);
+					border: 3px solid _palette(accent3);
+					background-color: _palette(accent2);
 				}
 			}
 
 			&.style4 {
 				> .image:before {
-					background-color: _palette(accent4);
+					border: 3px solid _palette(accent4);
+					background-color: _palette(accent2);
 				}
 			}
 
 			&.style5 {
 				> .image:before {
-					background-color: _palette(accent5);
+					border: 3px solid _palette(accent5);
+					background-color: _palette(accent2);
 				}
 			}
 
 			&.style6 {
 				> .image:before {
-					background-color: _palette(accent6);
+					border: 3px solid _palette(accent6);
+					background-color: _palette(accent2);
 				}
 			}
 
 			&.styleCustom {
 				> .image:before {
-					background-color: _palette(accentCustom);
+					border: 3px solid _palette(accentCustom);
+					background-color: _palette(accent2);
 				}
 			}
 
@@ -173,7 +180,7 @@
 
 						&:before {
 							background-color: _palette(bg-accent);
-							opacity: 0.35;
+							opacity: 0;
 						}
 
 						&:after {
