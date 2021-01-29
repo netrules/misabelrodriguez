@@ -99,6 +99,21 @@
                 }
             }
         }
+        .tiles article > a h2 {
+            font-family: 'Abril Fatface', sans-serif;
+            font-weight: 900;
+            margin: 0 -0.4em;
+            padding: 0.1em 0.4em;
+            border-radius: 0.8em 0.3em;
+            background: transparent;
+            background-image: linear-gradient( to right, rgba(255, 225, 0, 0.1), rgb(61, 217, 249) 4%, rgba(255, 225, 0, 0.3) );
+            -webkit-box-decoration-break: clone;
+            box-decoration-break: clone;
+        }
+        p {
+            font-weight: 600;
+            -webkit-text-stroke: 1px black;
+        }
     }
 @media screen and (max-width: 480px) {
     .border {
