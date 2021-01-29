@@ -7,13 +7,13 @@
 /* Tiles */
 
 	.tiles {
-		$gutter: _size(gutter);
+		$gutter: _size(gutter)/2;
 		$duration: 0.5s;
 		$ease: 'ease';
 
 		@include vendor('display', 'flex');
 		@include vendor('flex-wrap', 'wrap');
-		postiion: relative;
+		position: relative;
 		margin: ($gutter * -1) 0 0 ($gutter * -1);
 
 		article {
@@ -22,7 +22,7 @@
 				'opacity #{$duration} #{$ease}'
 			));
 			position: relative;
-			width: calc(#{(100% / 3)} - #{$gutter * 1});
+			width: calc(#{(100% / 4)} - #{$gutter * 1});
 			margin: $gutter 0 0 $gutter;
 
 			> .image {
@@ -190,7 +190,7 @@
 		}
 
 		* + & {
-			margin-top: _size(element-margin);
+			margin-top: 0;
 		}
 
 		body.is-preload & {

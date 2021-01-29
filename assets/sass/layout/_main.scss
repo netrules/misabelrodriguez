@@ -6,10 +6,81 @@
 
 /* Main */
 
+    @-webkit-keyframes Gradient {
+        0% {
+            background-position: 30% 50%
+        }
+        50% {
+            background-position: 25% 50%
+        }
+        100% {
+            background-position: 30% 50%
+        }
+        
+    }
+
 	#main {
 		@include padding(5em, 0, (-5em, 0, 3em, 0));
 
 		@include breakpoint('<=small') {
 			@include padding(3em, 0, (-3em, 0, 3em, 0));
-		}
-	}
+        }
+    
+        .border{
+            padding: 5px;
+            background: linear-gradient(110deg, #ffeead 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, #C5E7D7 34%, #88d8b0 34%);
+            background-size: 400% 400%;
+            background-position: 25% 50%;
+            border: 0px solid white;
+            border-radius: 15px;
+            -webkit-animation: Gradient 15s ease infinite;
+            -moz-animation: Gradient 5s ease infinite;
+            animation-play-state: paused;
+            margin: 0 2em;
+            &:hover {
+                animation-play-state: running;
+            }
+            .inner-cutout {
+                /* border-width: 4px; */
+                border-style: solid;
+                border-radius: 16px;
+                padding: 50px 32px;
+                box-sizing: border-box;
+                background: #ffffff;
+                background-image: initial;
+                background-position-x: initial;
+                background-position-y: initial;
+                background-size: initial;
+                background-repeat-x: initial;
+                background-repeat-y: initial;
+                background-attachment: initial;
+                background-origin: initial;
+                background-clip: initial;
+                background: linear-gradient(110deg, #ffffffa3 33%, rgba(0, 0, 0, 0) 43%), linear-gradient(110deg, #ffffff5e 54%, #ccfaff 34%);
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;        
+                header {
+                    .landpage-huge {
+                        text-align: center;
+                        color: whitesmoke;
+                        font-family: 'Abril Fatface', sans-serif;
+                        margin: 0;
+                        text-shadow: 0px 0px 3px black, 0px 1px 2px black, 0px -1px 2px black;
+                        font-weight: 500;
+                    }
+                    h2 {
+                        text-align: center;
+                        color: #222222;
+                        margin-bottom: 1em;
+                    }
+                    p {
+                        text-align: center;
+                        margin: 0;
+                        position: relative;
+                        font-weight: 800;
+                        color: whitesmoke;
+                        text-shadow: 0px 0px 3px black, 0px 1px 2px black, 0px -1px 2px black;
+                    }
+                }
+            }
+        }
+    }

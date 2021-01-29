@@ -37,8 +37,12 @@
                 {{ partial "header.html" . }}
                 <!-- Main -->
                 <div id="main">
-                    <div class="inner">
+                    <div class="border">
+                        <div class="inner inner-cutout">
+                    <!--div class="inner"-->
                         {{ block "content" . }}{{ end }}
+                    <!--/div-->
+                        </div>
                     </div>
                 </div>
                 {{ partial "footer.html" . }}
