@@ -1,10 +1,13 @@
 {{ define "content" }}
 
-    <!--h1>{{ .Title }}</h1-->
+    <header>
+        <h1 class="landpage-huge"> [ architect + art direction ] </h1>
+        <h2>{{ .Site.Title }}</h2>
+    </header>
     {{ if .Params.img_src }}
         <span class="image main"><img src="{{ .Params.img_src | relURL }}" alt="" /></span>
     {{ end }}
-    {{ .Content }}
+    <div class="article_desc">{{ .Content }}</div>
     
     <section class="tiles">
         {{ if .Params.collection_items }}
