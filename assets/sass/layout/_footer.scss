@@ -9,7 +9,8 @@
 	#footer {
 		$gutter: _size(gutter);
 
-		@include padding(3em, 0, (0, 0, 1.25em, 0));
+        @include padding(3em, 0, (0, 0, 1.25em, 0));
+        margin: 2em;
 		background-color: _palette(bg-alt);
 
 		> .inner {
