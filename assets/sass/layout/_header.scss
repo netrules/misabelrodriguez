@@ -50,6 +50,9 @@
                 color: #333;
                 vertical-align: bottom;
                 transition: color .3s ease-out;
+                @include breakpoint('<=medium') {
+                    top: 0px;
+                }
 
                 &::before {
                     content: "";

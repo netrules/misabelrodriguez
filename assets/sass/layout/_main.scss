@@ -100,3 +100,11 @@
             }
         }
     }
+@media screen and (max-width: 480px) {
+    .border {
+        margin: 0 !important;
+    }
+    .article_desc {
+        margin: 0 -10% !important;
+    }
+}
