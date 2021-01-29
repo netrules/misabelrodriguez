@@ -1,6 +1,6 @@
 ---
 title: Manzana
-home_style: style1
+home_style: style2
 home_img: manzana
 excerpt: Set Designer
 date: '2020-04-05'

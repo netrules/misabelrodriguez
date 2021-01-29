@@ -1,6 +1,6 @@
 ---
 title: Segundo Sol
-home_style: style3
+home_style: style2
 home_img: segundo-sol
 excerpt: Set Designer
 date: '2020-04-06'

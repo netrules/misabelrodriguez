@@ -1,6 +1,6 @@
 ---
 title: La Isla Minima
-home_style: style5
+home_style: style2
 home_img: la-isla-minima
 excerpt: Coordinadora de arte
 date: '2020-04-04'

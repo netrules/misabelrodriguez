@@ -1,6 +1,6 @@
 ---
 title: Milee Collection
-home_style: style6
+home_style: style2
 home_img: milee-collection
 excerpt: Construcción
 date: '2020-04-08'

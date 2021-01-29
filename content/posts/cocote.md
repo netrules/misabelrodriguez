@@ -1,6 +1,6 @@
 ---
 title: Cocote
-home_style: style3
+home_style: style2
 home_img: cocote
 excerpt: Asistente del departamento de arte
 date: '2020-04-11'

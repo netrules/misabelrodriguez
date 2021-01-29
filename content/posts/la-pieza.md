@@ -1,6 +1,6 @@
 ---
 title: La Pieza
-home_style: style4
+home_style: style2
 home_img: la-pieza
 excerpt: Set decor / Set dresser
 date: '2020-04-10'

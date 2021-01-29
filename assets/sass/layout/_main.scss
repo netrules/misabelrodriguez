@@ -57,8 +57,8 @@
                 background-origin: initial;
                 background-clip: initial;
                 background-color: #ddddddee;
-                background: linear-gradient(0deg, #d37ed3 0%, #25e7ff91 100%);
-                // background: linear-gradient(110deg, #ffffffa3 33%, rgba(0, 0, 0, 0) 43%), linear-gradient(110deg, #ffffff5e 54%, #ccfaff 34%);
+                //background: linear-gradient(0deg, #d37ed3 0%, #25e7ff91 100%);
+                background: linear-gradient(110deg, #ffffffa3 33%, rgba(0, 0, 0, 0) 43%), linear-gradient(110deg, #ffffff5e 54%, #ccfaff 34%);
                 box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;        
                 header {
                     .landpage-huge {
@@ -66,7 +66,8 @@
                         color: whitesmoke;
                         font-family: 'Abril Fatface', sans-serif;
                         margin: 0;
-                        text-shadow: 0px 0px 3px black, 0px 1px 2px black, 0px -1px 2px black;
+                        //text-shadow: 0px 0px 3px black, 0px 1px 2px black, 0px -1px 2px black;
+                        -webkit-text-stroke: 1.5px black;
                         font-weight: 500;
                     }
                     h2 {
@@ -79,8 +80,7 @@
                         margin: 0;
                         position: relative;
                         font-weight: 800;
-                        color: whitesmoke;
-                        -webkit-text-stroke: 1px black;
+                        color: black;
                     }
                 }
             }
@@ -98,7 +98,7 @@
                 }
             }
         }
-        .tiles article > a h2 {
+        /*.tiles article > a h2 {
             font-family: 'Abril Fatface', sans-serif;
             font-weight: 900;
             margin: 0 -0.4em;
@@ -108,7 +108,7 @@
             background-image: linear-gradient( to right, rgba(255, 225, 0, 0.1), rgb(61, 217, 249) 4%, rgba(255, 225, 0, 0.3) );
             -webkit-box-decoration-break: clone;
             box-decoration-break: clone;
-        }
+        }*/
         p {
             font-weight: 600;
         }
