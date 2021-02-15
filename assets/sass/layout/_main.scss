@@ -46,7 +46,8 @@
                 border-radius: 16px;
                 padding: 50px 32px;
                 box-sizing: border-box;
-                background: #ffffff;
+                background: #d7dcda;
+                /*background: #ffffff;
                 background-image: initial;
                 background-position-x: initial;
                 background-position-y: initial;
@@ -56,18 +57,18 @@
                 background-attachment: initial;
                 background-origin: initial;
                 background-clip: initial;
-                background-color: #ddddddee;
+                background-color: #ddddddee;*/
                 //background: linear-gradient(0deg, #d37ed3 0%, #25e7ff91 100%);
-                background: linear-gradient(110deg, #ffffffa3 33%, rgba(0, 0, 0, 0) 43%), linear-gradient(110deg, #ffffff5e 54%, #ccfaff 34%);
-                box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;        
+                /*background: linear-gradient(110deg, #ffffffa3 33%, rgba(0, 0, 0, 0) 43%), linear-gradient(110deg, #ffffff5e 54%, #ccfaff 34%);
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;*/       
                 header {
                     .landpage-huge {
                         text-align: center;
-                        color: whitesmoke;
+                        color: #000;
                         font-family: 'Abril Fatface', sans-serif;
                         margin: 0;
                         //text-shadow: 0px 0px 3px black, 0px 1px 2px black, 0px -1px 2px black;
-                        -webkit-text-stroke: 1.5px black;
+                        // -webkit-text-stroke: 1.5px black;
                         font-weight: 500;
                     }
                     h2 {
@@ -79,7 +80,10 @@
                         text-align: center;
                         margin: 0;
                         position: relative;
-                        font-weight: 800;
+                        font-family: "Literata", serif;
+                        line-height: 1.43;
+                        font-size: 20px;
+                        font-weight: 500;
                         color: black;
                     }
                 }
