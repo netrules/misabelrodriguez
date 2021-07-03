@@ -63,18 +63,21 @@
                     transform: translateY(calc(100% - 2px));
                     width: 100%;
                     height: 100%;
-                    background-image: linear-gradient(60deg, #64b3f4 0%, #c2e59c 100%);
+                    background-image: linear-gradient(60deg, #F98DB1 0%, #F7EEF6 100%);
                     transition: transform .25s ease-out;
                 }
-
-                &:hover { 
-                    color: _palette(accent1);
-                }
-                &:hover::before {
-                transform: translateY(0);
-                transition: transform .25s ease-out;
-                }
             }
+			
+			&:hover { 
+				.title {
+					color: #fff;
+					
+					&::before {
+						transform: translateY(0);
+						transition: transform .25s ease-out;
+					}
+				}
+			}
 		}
 
 		nav {
@@ -172,6 +175,10 @@
 						}
 					}
 				}
+			}
+				
+			.logo {
+				width:unset;
 			}
 		}
 	}
