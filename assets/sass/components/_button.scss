@@ -66,11 +66,12 @@
 
 		&.primary {
 			box-shadow: none;
-			background-color: _palette(bg-accent);
-			color: _palette(bg) !important;
+			background-color: _palette(fg);
+			color: _palette(bg-accent) !important;
 
 			&:hover {
 				background-color: _palette(accent1);
+				color: _palette(accent3) !important;
 			}
 
 			&:active {
