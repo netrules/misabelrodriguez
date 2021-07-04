@@ -267,8 +267,7 @@
             loadImage(imageUrl)
             .then(imgSrc => {
             // Loading successfuly complete; set the image and probably do other stuff.
-            imgContainer.src = imgSrc;
-            progressBar.style.display = "none";
+				imgContainer.src = imgSrc;
             }, xhr => {
             // An error occured. We have the XHR object to see what happened.
             });
